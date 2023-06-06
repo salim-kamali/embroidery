@@ -152,9 +152,9 @@ a {
     filter: unset;
     background-color: var(--c1);
 }
-section{
+/* section{
     overflow: hidden;
-}
+} */
 ul {
     padding: 0;
 }
@@ -915,6 +915,7 @@ header .navbar-nav .btn {
 .inset-sbs .slick-dots{
     text-align: unset;
     left: 16%;
+    width: auto;
 }
 .inset-sbs .slick-dots li button:before {
     font-size: 42px;

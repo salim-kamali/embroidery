@@ -39,7 +39,7 @@ $(document).ready(function () {
         infinite: true,
         swipe: true,
         autoplay: true,
-        speed: 500,
+        speed: 500
     });
 
     $(".easty-slider").slick({
