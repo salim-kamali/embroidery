@@ -152,7 +152,9 @@ a {
     filter: unset;
     background-color: var(--c1);
 }
-
+section{
+    overflow: hidden;
+}
 ul {
     padding: 0;
 }
