@@ -341,6 +341,9 @@
 
 @media(max-width:767px) {
 
+    header{
+        padding-top: 20px;
+    }
     .service {
         padding-top: 48px;
         padding-bottom: 48px;
