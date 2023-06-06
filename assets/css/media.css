@@ -77,10 +77,15 @@
         margin-bottom: 16px;
     }
 
-    /* ---- Start About _us Page ----  */
-    .home_hero {
-        padding-top: 190px;
+    header .navbar-nav li:nth-last-child(2) {
+        margin-bottom: 0;
     }
+
+    header .navbar-nav li:last-child {
+        display: none;
+    }
+
+    /* ---- Start About _us Page ----  */
 
     header .bg-img {
         height: 690px;
@@ -376,6 +381,18 @@
         border: 1px solid var(--cf);
     }
 
+    .home_hero {
+        padding-top: 160px;
+        padding-bottom: 24px;
+    }
+    .home_hero .bg-img{
+        height: 520px;
+    }
+    .quality .title_sec h3 , 
+        .quality .title_sec h3 span {
+        font-size: 20px;
+        line-height: 150%;
+    }
     .service {
         padding-top: 48px;
         padding-bottom: 48px;

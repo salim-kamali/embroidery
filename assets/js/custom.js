@@ -39,6 +39,7 @@ $(document).ready(function () {
         infinite: true,
         swipe: true,
         autoplay: true,
+        centerMode: true,
         speed: 500
     });
 
@@ -57,7 +58,7 @@ $(document).ready(function () {
             {
                 breakpoint: 990,
                 settings: {
-                    slidesToShow:2,
+                    slidesToShow: 2,
 
                 }
             },
@@ -69,7 +70,17 @@ $(document).ready(function () {
                 }
             }]
     });
-    
+
+    // $(".home-slider").slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     dots: true,
+    //     arrows: false,
+    //     infinite: true,
+    //     swipe: true,
+    //     autoplay: true,
+    //     speed: 500
+    // });
 
     if ($(window).width() < 990) { }
 });

@@ -225,6 +225,7 @@ header {
     z-index: 2;
     width: 100%;
 }
+
 /* 
 header .bg-img {
     top: 0;
@@ -249,6 +250,7 @@ header .navbar-nav {
 
 header .navbar-brand {
     padding: 0;
+    display: inherit;
 }
 
 header .navbar-nav .nav-link {
@@ -323,10 +325,56 @@ header .navbar-nav .btn {
     padding-bottom: 96px;
 }
 
-.home_hero .bg-img{
+/* .home_hero .item{
+    
+} */
+.home_hero .social-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.home_hero .social-icon li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.home_hero .social-icon li:last-child {
+    margin-bottom: 0;
+}
+
+.home_hero .social-icon li .sl-detail {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 250px;
+    z-index: -1;
+    height: 55px;
+    padding: 8px 10px 8px 67px;
+    border-radius: 50px;
+    background-color: rgba(217, 217, 217, 0.8);
+}
+
+.home_hero .social-icon li .sl-detail p {
+    font-family: 'P-Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #101010;
+}
+
+.home_hero .social-icon li:hover .sl-detail {
+    display: block;
+    transition: 0.5s all ease-in-out;
+}
+
+.home_hero .bg-img {
     top: 0px;
     z-index: 0;
 }
+
 .home_hero .container {
     position: relative;
     z-index: 1;
@@ -436,12 +484,12 @@ header .navbar-nav .btn {
 /* ----- Start Who We Are ----  */
 .who-we {
     position: relative;
-    padding-bottom: 80px;
+    padding-bottom: 110px;
 }
 
 .who-we .bg-img {
     top: -230px;
-    height: 981px;
+    height: 1020px;
     z-index: -1;
 }
 
@@ -457,6 +505,39 @@ header .navbar-nav .btn {
 
 .who-we .bbtn {
     margin-top: 62px;
+}
+
+.who-we .who-img {
+    position: absolute;
+    bottom: -19%;
+    right: 0;
+}
+
+.who-we .who-img .video-img {
+    position: relative;
+}
+
+.who-we .who-img .play-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: var(--c0);
+    font-size: 1.5rem;
+    line-height: 77px;
+    padding: 0;
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+    background: #fff;
+}
+
+#video1 .modal-content {
+    height: 380px;
+    color: var(--cf);
+    background-color: var(--c0);
 }
 
 /* ----- End Who We Are ----  */
@@ -476,13 +557,19 @@ header .navbar-nav .btn {
     top: -10px;
     left: 0;
     right: 0;
+    z-index: 1;
     text-align: center;
 }
 
 .printing .bg-img {
     top: -60px;
     height: 856px;
-    z-index: -1;
+    z-index: 0;
+}
+
+.printing .container {
+    position: relative;
+    z-index: 1;
 }
 
 .printing .title_sec {
@@ -611,7 +698,7 @@ header .navbar-nav .btn {
 }
 
 .pricing .bg-img {
-    height: 1020px;
+    height: 1080px;
 }
 
 .pricing .pricing-nav {
@@ -859,9 +946,9 @@ header .navbar-nav .btn {
 
 .digitizing .dig2::before {
     top: auto;
-    bottom: 40%;
+    bottom: 38%;
     left: auto;
-    right: -40%;
+    right: -29%;
     background-image: url(../img/icons/dot-line-2.svg);
 }
 
@@ -943,10 +1030,23 @@ header .navbar-nav .btn {
     opacity: 1;
 }
 
-.inset-sbs .slick-dots li.slick-active button:before {
-    font-size: 52px;
+.inset-sbs .slick-dots li.slick-active {
+    width: 22px;
+    height: 22px;
+    top: 1px;
+}
+
+.inset-sbs .slick-dots li.slick-active button {
+    width: 22px;
+    height: 22px;
+}
+
+.inset-sbs .slick-dots li.slick-active button::before {
+    font-size: 68px;
     color: var(--c2);
     opacity: 1;
+    width: 22px;
+    height: 22px;
 }
 
 /* ---- End sbs-01 ---- */
@@ -1174,7 +1274,7 @@ header .navbar-nav .btn {
 
 .banner_hero {
     position: relative;
-    padding-top: 249px;
+    padding-top: 322px;
     padding-bottom: 249px;
     background-size: cover;
     background-position: center;
@@ -1608,7 +1708,8 @@ footer .footer-bottom ul li a {
     text-transform: capitalize;
     background-color: var(--cf);
 }
-.sig-up .nav-pills .nav-link.active{
+
+.sig-up .nav-pills .nav-link.active {
     color: var(--cf);
     background-color: var(--c2);
 }
@@ -1654,7 +1755,8 @@ footer .footer-bottom ul li a {
     padding: 10px 24px;
     text-align: center;
 }
-.sig-up .forget{
+
+.sig-up .forget {
     color: var(--cf);
     margin-top: 8px;
     display: inline-block;
