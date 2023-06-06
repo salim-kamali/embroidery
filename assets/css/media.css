@@ -422,4 +422,12 @@
         bottom: 4%;
         width: 32%;
     }
+
+    .pricing .nav-tabs .nav-link {
+        padding: 10px 24px;
+    }
+
+    .easty-step .wrap .txt {
+        padding: 0 32px;
+    }
 }
