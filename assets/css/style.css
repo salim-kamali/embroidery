@@ -220,6 +220,9 @@ header {
     z-index: 1;
     width: 100%;
 }
+header .bg-img{
+    top: 0;
+}
 header .navbar{
     padding: 0;
 }
@@ -271,7 +274,7 @@ header .navbar-nav .nav-link:hover::before {
     content: '';
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
     height: 9px;
     width: 9px;
     margin: auto;
@@ -307,10 +310,10 @@ header .navbar-nav .btn {
     padding-top: 197px;
     padding-bottom: 96px;
 }
-.home_hero .bg-img{
+/* .home_hero .bg-img{
     top: -190px;
     z-index: 0;
-}
+} */
 .home_hero .container{
     position: relative;
     z-index: 1;
@@ -904,7 +907,13 @@ header .navbar-nav .btn {
 .inset-sbs .bbtn {
     margin-top: 38px;
 }
-
+.inset-sbs .slick-list{
+    padding-bottom: 20px !important;
+}
+.inset-sbs .slick-dots{
+    text-align: unset;
+    left: 16%;
+}
 .inset-sbs .slick-dots li button:before {
     font-size: 42px;
     color: var(--cf);
@@ -912,6 +921,7 @@ header .navbar-nav .btn {
 }
 
 .inset-sbs .slick-dots li.slick-active button:before {
+    font-size: 52px;
     color: var(--c2);
     opacity: 1;
 }
@@ -1097,6 +1107,9 @@ header .navbar-nav .btn {
 
 .contact_us .form-group {
     margin-bottom: 15px;
+}
+.contact_us .form-group .bbtn{
+    margin-top: 30px;
 }
 
 .contact_us label {

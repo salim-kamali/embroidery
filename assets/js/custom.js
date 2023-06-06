@@ -7,7 +7,7 @@ $(document).ready(function () {
         arrows: true,
         infinite: true,
         autoplay: true,
-        speed: 500,
+        speed: 1000,
         swipe: true,
         centerMode: true,
         centerPadding: '20px',
@@ -18,7 +18,7 @@ $(document).ready(function () {
             {
                 breakpoint: 991,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
 
                 }
             },
@@ -54,11 +54,10 @@ $(document).ready(function () {
         nextArrow: '.slider-2-next',
         prevArrow: '.slider-2-prev',
         responsive: [
-
             {
-                breakpoint: 991,
+                breakpoint: 990,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow:2,
 
                 }
             },

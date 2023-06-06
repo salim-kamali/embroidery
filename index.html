@@ -26,10 +26,11 @@
 <body>
 
     <header>
+        <div class="bg-img" style="background-image: url(assets/img/icons/home-bg.svg);"></div>
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-head.png" alt="">
+                    <img src="assets/img/logo-head.png" alt="" class="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -69,7 +70,6 @@
     </header>
 
     <section class="home_hero">
-        <div class="bg-img" style="background-image: url(assets/img/icons/home-bg.svg);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="img">
+                    <div class="img shirt-img">
                         <img src="assets/img/quality-shirt.png" alt="">
                     </div>
                 </div>
@@ -150,12 +150,12 @@
         <div class="bg-img" style="background-image: url(assets/img/icons/who-we-bg.svg);"></div>
         <div class="container">
             <div class="row justify-content-end">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-4">
                     <div class="img">
                         <img src="assets/img/who-01.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-4">
                     <div class="img">
                         <img src="assets/img/who-02.png" alt="">
                     </div>
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center" >
+            <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="row easty-slider">
                         <div class="col-lg-4">
@@ -407,7 +407,7 @@
                     <div class="tab-pane fade show active" id="one-tab-pane" role="tabpanel" aria-labelledby="one-tab"
                         tabindex="0">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Simple</h4>
@@ -437,7 +437,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Medium</h4>
@@ -467,7 +467,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Complex</h4>
@@ -503,7 +503,7 @@
                     <div class="tab-pane fade" id="two-tab-pane" role="tabpanel" aria-labelledby="two-tab" tabindex="0">
 
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Simple</h4>
@@ -533,7 +533,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Medium</h4>
@@ -563,7 +563,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Complex</h4>
@@ -600,7 +600,7 @@
                         tabindex="0">
 
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Simple</h4>
@@ -630,7 +630,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Medium</h4>
@@ -660,7 +660,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="wrap">
                                     <div class="head">
                                         <h4>Complex</h4>
@@ -721,18 +721,21 @@
                 <p>Lorem ipsum dolor sit amet consectetur. Non condimentum suspendisse tortor </p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-3">
+                <div class="col-6 col-md-3">
                     <div class="img dig1">
                         <img src="assets/img/dig-01.png" alt="">
                         <a class="bbtn btn-blue" href="#">ORIGINAL ART</a>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-6 col-md-6">
                     <div class="img dig2">
                         <img src="assets/img/dig-02.png" alt="">
                         <a class="bbtn btn-blue" href="#">EMBROIDERY</a>
                     </div>
                 </div>
+                <a href="#" class="d-lg-none d-md-block p-lock text-center">
+                    <img src="assets/img/icons/price-lock.svg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -743,23 +746,74 @@
         </a>
         <div class="bg-img" style="background-image: url(assets/img/icons/sbs-bg-01.svg);"></div>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="img sbs-slider">
-                        <img src="assets/img/sbs-01.png" alt="">
-                        <img src="assets/img/sbs-01.png" alt="">
-                        <img src="assets/img/sbs-01.png" alt="">
+            <div class="sbs-slider">
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="img">
+                                <img src="assets/img/sbs-01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="txt">
+                                <h3>CUSTOM <span>PATCHES</span> OPTIONS</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur. Non condimentum suspendisse tortor nisi dolor
+                                    posuere
+                                    proin purus vulputate. Enim phasellus aliquet tellus nec felis arcu nisl ac aliquam.
+                                    Neque
+                                    erat
+                                    erat aenean suspendisse commodo varius nulla.ac aliquam. Neque erat erat aenean
+                                    suspendisse
+                                    commodo varius nulla. </p>
+                                <a href="#" class="bbtn">view more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="txt">
-                        <h3>CUSTOM <span>PATCHES</span> OPTIONS</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur. Non condimentum suspendisse tortor nisi dolor posuere
-                            proin purus vulputate. Enim phasellus aliquet tellus nec felis arcu nisl ac aliquam. Neque
-                            erat
-                            erat aenean suspendisse commodo varius nulla.ac aliquam. Neque erat erat aenean suspendisse
-                            commodo varius nulla. </p>
-                        <a href="#" class="bbtn">view more</a>
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="img">
+                                <img src="assets/img/sbs-01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="txt">
+                                <h3>CUSTOM <span>PATCHES</span> OPTIONS</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur. Non condimentum suspendisse tortor nisi dolor
+                                    posuere
+                                    proin purus vulputate. Enim phasellus aliquet tellus nec felis arcu nisl ac aliquam.
+                                    Neque
+                                    erat
+                                    erat aenean suspendisse commodo varius nulla.ac aliquam. Neque erat erat aenean
+                                    suspendisse
+                                    commodo varius nulla. </p>
+                                <a href="#" class="bbtn">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="img">
+                                <img src="assets/img/sbs-01.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="txt">
+                                <h3>CUSTOM <span>PATCHES</span> OPTIONS</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur. Non condimentum suspendisse tortor nisi dolor
+                                    posuere
+                                    proin purus vulputate. Enim phasellus aliquet tellus nec felis arcu nisl ac aliquam.
+                                    Neque
+                                    erat
+                                    erat aenean suspendisse commodo varius nulla.ac aliquam. Neque erat erat aenean
+                                    suspendisse
+                                    commodo varius nulla. </p>
+                                <a href="#" class="bbtn">view more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -773,7 +827,7 @@
                 <h3><span>ORDER</span> PROCESS</h3>
             </div>
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="wrap">
                         <div class="img">
                             <img src="assets/img/icons/process-01.svg" alt="">
@@ -784,7 +838,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="wrap">
                         <div class="img">
                             <img src="assets/img/icons/process-02.svg" alt="">
@@ -795,7 +849,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="wrap">
                         <div class="img">
                             <img src="assets/img/icons/process-03.svg" alt="">
@@ -806,7 +860,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-6">
                     <div class="wrap">
                         <div class="img">
                             <img src="assets/img/icons/process-04.svg" alt="">

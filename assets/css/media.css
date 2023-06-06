@@ -1,4 +1,10 @@
 @media(max-width:991px) {
+
+    h1,
+    h1 span {
+        font-size: 40px;
+    }
+
     h2 {
         font-size: 40px;
     }
@@ -18,37 +24,66 @@
         font-size: 20px;
     }
 
-    /* --------header-------  */
-    /* header .navbar-collapse.show{
-        background-color: var(--c1);
-    } */
-    header .navbar-collapse.show::before {
-        position: absolute;
-        content: '';
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        /* background-color: var(--c1); */
-        background-image: url(../img/icons/home-bg.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: initial;
+    .slider-arrows .prev {
+        left: 2%;
     }
 
-    header .navbar-nav{
+    .slider-arrows .next {
+        right: 2%;
+    }
+
+    /* --------header-------  */
+
+    /* header.bg{
+        position: absolute;
+        z-index: 2;
+    } */
+    /* header .navbar-collapse.show {} */
+
+    header .navbar {
+        position: relative;
+    }
+
+    header .navbar-nav {
         align-items: start;
         padding-left: 20px;
     }
-    header .navbar-nav li{
+
+    header .navbar-toggler:focus {
+        box-shadow: unset;
+    }
+
+    header .navbar-nav li {
         margin-bottom: 16px;
     }
+
     /* ---- Start About _us Page ----  */
+    .home_hero {
+        padding-top: 80px;
+    }
+
+    header .bg-img {
+        height: 690px;
+    }
 
     .banner_hero {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+
+
+    /* ---- quality ---  */
+    .quality .bg-img {
+        height: 1402px;
+        top: -304px;
+    }
+
+    .quality .shirt-img {
+        text-align: center;
+    }
+
+    .quality .product-wrap {
+        left: 0;
     }
 
     /* --- what_we_do ---  */
@@ -73,7 +108,123 @@
         flex-direction: column-reverse;
     }
 
+    .printing .shirt::before {
+        display: none;
+    }
 
+    .printing .shirt {
+        padding-bottom: 80px;
+    }
+
+    .printing .lock-btn {
+        position: absolute;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .pricing .bg-img {
+        height: 1850px;
+    }
+
+    .pricing .wrap {
+        margin-bottom: 20px;
+    }
+
+    .pricing .col-md-6:last-child .wrap {
+        margin-bottom: 0;
+    }
+
+    .digitizing .img::before {
+        display: none;
+    }
+
+    .digitizing .dig1 .bbtn {
+        left: -100%;
+        bottom: -50%;
+    }
+
+    .digitizing .dig2 .bbtn {
+        left: 32%;
+        bottom: -50%;
+    }
+
+    .inset-sbs .arrow {
+        top: -1%;
+    }
+
+    .inset-sbs .bg-img {
+        height: 1400px;
+    }
+
+    .inset-sbs img {
+        margin: auto;
+    }
+
+    .inset-sbs .txt {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .inset-sbs .slick-dots {
+        text-align: center;
+        left: auto;
+    }
+
+    .inset-sbs .slick-dots li button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li button:before {
+        font-size: 75px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li.slick-active button:before {
+        font-size: 98px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .process .bg-img {
+        height: 830px;
+    }
+
+    .process .wrap {
+        margin-bottom: 30px;
+    }
+
+    .process .txt p {
+        font-size: 16px;
+    }
+
+    .blog .slick-slide.slick-current .item {
+        transform: scale(1);
+    }
+
+    .slider-arrows .slider-arrow {
+        top: 64%;
+    }
+
+    .blog .item {
+        padding: 0 40px;
+    }
+
+    .blog .img img {
+        border-radius: 20px;
+    }
+
+    .blog .date p {
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .blog .txt {
+        padding: 0 15px;
+        text-align: center;
+    }
 
     /* ---- End About _us Page ----  */
 
@@ -232,4 +383,43 @@
 
     /* ---- End faqs Page ----  */
 
+    /* -------------------------- */
+
+    .digitizing .dig1 .bbtn {
+        left: 0;
+        bottom: -50%;
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+
+    .digitizing .dig2 .bbtn {
+        left: 0;
+        bottom: -69%;
+        font-size: 16px;
+        padding: 13px 20px;
+    }
+
+    .pricing .nav-tabs {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .pricing .bg-img {
+        height: 2350px;
+    }
+
+    .who-we .img {
+        text-align: center;
+    }
+
+    .quality .bg-img {
+        height: 1750px;
+    }
+
+    .quality .product-wrap {
+        left: 2%;
+        bottom: 4%;
+        width: 32%;
+    }
 }
