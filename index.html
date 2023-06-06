@@ -26,18 +26,22 @@
 <body>
 
     <header>
-        <div class="bg-img" style="background-image: url(assets/img/icons/home-bg.svg);"></div>
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-head.png" alt="" class="d-none d-lg-block">
-                    <img src="assets/img/logo-md.png" alt="" class="d-lg-none d-md-block">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars    "></i>
-                </button>
+                <div class="nav-flex">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo-head.png" alt="" class="d-none d-lg-block">
+                        <img src="assets/img/logo-md.png" alt="" class="d-lg-none d-md-block">
+                    </a>
+                    <div class="div d-flex align-items-center">
+                        <a class="btn" data-bs-toggle="modal" data-bs-target="#sigup">Sign Up</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars    "></i>
+                        </button>
+                    </div>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -62,7 +66,7 @@
                             <a class="nav-link" href="#">contact us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn" href="#">Sign Up</a>
+                            <a class="btn" data-bs-toggle="modal" data-bs-target="#sigup">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -71,6 +75,7 @@
     </header>
 
     <section class="home_hero">
+        <div class="bg-img" style="background-image: url(assets/img/icons/home-bg.svg);"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1141,6 +1146,89 @@
 
     <!-- --- Custom Js ---  -->
     <script src="assets/js/custom.js"></script>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="sigup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content sig-up">
+
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-sigup-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-sigup" type="button" role="tab" aria-controls="pills-sigup"
+                            aria-selected="true">sig up</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-sigin-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-sigin" type="button" role="tab" aria-controls="pills-sigin"
+                            aria-selected="false">login</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-sigup" role="tabpanel"
+                        aria-labelledby="pills-sigup-tab" tabindex="0">
+                        <div class="form-wrap">
+                            <div class="title_sec">
+                                <h4>sign up</h4>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">email</label>
+                                    <input type="email" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">password</label>
+                                    <input type="password" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">confirm password</label>
+                                    <input type="password" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="bbtn">sign up</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-sigin" role="tabpanel" aria-labelledby="pills-sigin-tab"
+                        tabindex="0">
+                        <div class="form-wrap">
+                            <div class="title_sec">
+                                <h4>login</h4>
+                            </div>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">Name</label>
+                                    <input type="text" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">password</label>
+                                    <input type="text" name="" id="" class="form-control" placeholder=""
+                                        aria-describedby="helpId">
+                                    <a href="#" class="forget">forget password</a>
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="bbtn">login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

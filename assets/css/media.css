@@ -3,6 +3,7 @@
     h1,
     h1 span {
         font-size: 40px;
+        line-height: 150%;
     }
 
     h2 {
@@ -34,19 +35,38 @@
 
     /* --------header-------  */
 
-    /* header.bg{
-        position: absolute;
-        z-index: 2;
-    } */
-    /* header .navbar-collapse.show {} */
+    header .navbar .container {
+        max-width: 100%;
+        padding: 0;
+    }
 
-    header .navbar {
-        position: relative;
+    header .nav-flex {
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    header .nav-flex .btn {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        padding: 8px 28px;
+        color: var(--cf);
+        border-radius: 30px;
+        font-family: 'P-Regular';
+        border: 1px solid var(--cf);
     }
 
     header .navbar-nav {
         align-items: start;
-        padding-left: 20px;
+        padding: 20px 32px;
+        /* color: ; */
+        background-color: var(--c1);
+    }
+
+    header .navbar-toggler {
+        border: none;
     }
 
     header .navbar-toggler:focus {
@@ -59,7 +79,7 @@
 
     /* ---- Start About _us Page ----  */
     .home_hero {
-        padding-top: 80px;
+        padding-top: 190px;
     }
 
     header .bg-img {
@@ -341,9 +361,21 @@
 
 @media(max-width:767px) {
 
-    header{
+    /* header {
         padding-top: 20px;
+    } */
+
+    header .nav-flex .btn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        padding: 6px 20px;
+        color: var(--cf);
+        border-radius: 30px;
+        font-family: 'P-Regular';
+        border: 1px solid var(--cf);
     }
+
     .service {
         padding-top: 48px;
         padding-bottom: 48px;
