@@ -1037,6 +1037,7 @@ header .navbar-nav .btn {
 
 .inset-sbs .slick-dots {
     text-align: unset;
+    bottom:0;
     left: 16%;
     width: auto;
 }
