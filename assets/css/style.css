@@ -1528,11 +1528,11 @@ header .navbar-nav .btn {
 
 .faqs .faqs-wrap .txt1 {
     font-family: "Impact";
-    font-size: 24px;
+    font-size: 32px;
     line-height: 150%;
-    width: 20%;
+    width: 8%;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     padding: 40px 20px;
     margin-right: 37px;
     border-right: 1px solid #B1B1B1;
@@ -1550,7 +1550,7 @@ header .navbar-nav .btn {
 
 .faqs .faqs-wrap .accordion-body .txt1 {
     color: var(--c2);
-    width: 19.8%;
+    width: 8%;
 }
 
 .faqs .accordion {
