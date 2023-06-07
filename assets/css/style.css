@@ -625,6 +625,17 @@ header .navbar-nav .btn {
     background-color: var(--c1);
 }
 
+/* .easty-step::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: skewY(-11deg);
+    background-color: var(--c1);
+} */
+
 .easty-step .title_sec {
     margin-bottom: 67px;
 }
@@ -730,7 +741,7 @@ header .navbar-nav .btn {
 
 .pricing .nav-tabs .nav-link.active,
 .pricing .nav-tabs .nav-link:hover {
-    border: none;
+    /* border: unset; */
     border-color: unset;
     color: var(--cf);
     background-color: var(--c2);
@@ -952,16 +963,22 @@ header .navbar-nav .btn {
     background-image: url(../img/icons/dot-line-2.svg);
 }
 
-.digitizing .dig1 .bbtn {
-    position: absolute;
-    left: -95%;
-    bottom: -40%
+.digitizing .two-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.digitizing .dig2 .bbtn {
-    position: absolute;
-    left: 100%;
-    bottom: 20%
+.digitizing .two-btn .btn1 {
+    position: relative;
+    top: -28px;
+    left: -75px;
+}
+
+.digitizing .two-btn .btn2 {
+    position: relative;
+    top: -115px;
+    left: 40px;
 }
 
 /* --- End digitizing ---  */
@@ -1434,6 +1451,10 @@ header .navbar-nav .btn {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.service .img img {
+    width: 100%;
 }
 
 .service .txt {

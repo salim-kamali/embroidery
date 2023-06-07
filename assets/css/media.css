@@ -1,3 +1,46 @@
+@media(max-width:1200px) {
+    .digitizing .dig1::before {
+        transform: rotate(338deg);
+    }
+
+    .digitizing .dig2::before {
+        bottom: 34%;
+        right: -40%;
+        width: 175px;
+        height: 100px;
+        transform: rotate(15deg);
+    }
+
+    .digitizing .two-btn .btn2 {
+        top: -80px;
+        left: 80px;
+    }
+}
+
+@media(max-width:1100px) {
+    .digitizing .dig1::before {
+        transform: rotate(327deg);
+    }
+
+    .digitizing .two-btn .btn1 {
+        top: -40px;
+        left: -15px;
+    }
+
+    .digitizing .dig2::before {
+        bottom: 34%;
+        right: -40%;
+        width: 175px;
+        height: 100px;
+        transform: rotate(20deg);
+    }
+
+    .digitizing .two-btn .btn2 {
+        top: -80px;
+        left: 20px;
+    }
+}
+
 @media(max-width:991px) {
 
     h1,
@@ -165,14 +208,13 @@
         display: none;
     }
 
-    .digitizing .dig1 .bbtn {
-        left: -100%;
-        bottom: -50%;
+    .digitizing .two-btn .btn1 {
+        top: 60px;
+        left: -15px;
     }
-
-    .digitizing .dig2 .bbtn {
-        left: 32%;
-        bottom: -50%;
+    .digitizing .two-btn .btn2 {
+        top: 60px;
+        left: -15px;
     }
 
     .inset-sbs .arrow {
@@ -385,14 +427,17 @@
         padding-top: 160px;
         padding-bottom: 24px;
     }
-    .home_hero .bg-img{
+
+    .home_hero .bg-img {
         height: 520px;
     }
-    .quality .title_sec h3 , 
-        .quality .title_sec h3 span {
+
+    .quality .title_sec h3,
+    .quality .title_sec h3 span {
         font-size: 20px;
         line-height: 150%;
     }
+
     .service {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -437,18 +482,11 @@
 
     /* -------------------------- */
 
-    .digitizing .dig1 .bbtn {
-        left: 0;
-        bottom: -50%;
-        padding: 13px 20px;
-        font-size: 16px;
-    }
 
-    .digitizing .dig2 .bbtn {
+    .digitizing .two-btn .bbtn{
+        font-size: 14px;
+        padding: 10px 28px;
         left: 0;
-        bottom: -69%;
-        font-size: 16px;
-        padding: 13px 20px;
     }
 
     .pricing .nav-tabs {
