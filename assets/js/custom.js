@@ -83,4 +83,26 @@ $(document).ready(function () {
     // });
 
     if ($(window).width() < 990) { }
+
+
+
+    if ($(window).width() > 100) {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var tp = $(".default_sticky").attr('data-top');
+            if (scroll >= tp) {
+                $(".default_sticky").addClass("affix");
+                $(".sticky_button").addClass("show");
+                $("body").addClass("body_affix");
+                // $("body").css("padding-top", tp+'px');
+            } else {
+                $(".default_sticky").removeClass("affix");
+                $(".sticky_button").removeClass("show");
+                $("body").removeClass("body_affix");
+                //$("body").css("padding-top", '0px');
+            }
+        });
+    }
+
+
 });

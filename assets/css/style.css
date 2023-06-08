@@ -219,6 +219,7 @@ ul li {
 
 /* ---- Start header ---  */
 
+
 header {
     position: absolute;
     top: 15px;
@@ -312,7 +313,21 @@ header .navbar-nav .btn {
     border: 1px solid var(--cf);
 }
 
-/* ---- Start header ---  */
+/* // sticky header */
+.default_sticky.affix {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    padding: 10px 0;
+    background-color: var(--c1);
+}
+
+/* // sticky header ends */
+
+/* ---- End header ---  */
 
 
 
@@ -1037,7 +1052,7 @@ header .navbar-nav .btn {
 
 .inset-sbs .slick-dots {
     text-align: unset;
-    bottom:0;
+    bottom: 0;
     left: 16%;
     width: auto;
 }
