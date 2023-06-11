@@ -38,7 +38,7 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
         swipe: true,
-        autoplay: true,
+        autoplay: false,
         centerMode: true,
         speed: 500
     });
@@ -48,7 +48,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        infinite: false,
+        infinite: true,
         autoplay: true,
         speed: 500,
         swipe: true,
@@ -85,7 +85,7 @@ $(document).ready(function () {
     if ($(window).width() < 990) { }
 
 
-
+    // ----------- header sticky -------- 
     if ($(window).width() > 100) {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -103,6 +103,22 @@ $(document).ready(function () {
             }
         });
     }
+
+
+    // ------- modal ------- 
+    // $("#contact").on("click", function () {
+    //     $(".pop-up").addClass("active");
+    //     $(".overlay").addClass("active");
+    // });
+
+    // $(".pop-up").on("click", function () {
+    //     $(".pop-up").removeClass("active");
+    // });
+
+    // $(".anther-popup").on("click", function () {
+    //     $(".pop-up2").addClass("active");
+    //     $(".pop-up").removeClass("active");
+    // });
 
 
 });

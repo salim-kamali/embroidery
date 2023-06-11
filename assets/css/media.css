@@ -138,9 +138,15 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
+    .home_hero .social-icon{
+        display: none;
+    }
 
     /* ---- quality ---  */
+    .quality {
+        padding-bottom: 120px;
+    }
+
     .quality .bg-img {
         height: 1402px;
         top: -304px;
@@ -152,6 +158,16 @@
 
     .quality .product-wrap {
         left: 0;
+    }
+
+    /* .who-we ---  */
+    .who-we .bg-img {
+        top: -150px;
+        height: 1220px;
+    }
+
+    .who-we .who-img {
+        display: none;
     }
 
     /* --- what_we_do ---  */
@@ -189,7 +205,13 @@
         top: auto;
         right: 0;
         left: 0;
-        bottom: 0;
+        bottom: 5%;
+    }
+
+    .printing .lock-btn p {
+        top: auto;
+        left: auto;
+        transform: rotate(0deg);
     }
 
     .pricing .bg-img {
@@ -204,17 +226,26 @@
         margin-bottom: 0;
     }
 
+    .digitizing {
+        padding-bottom: 48px;
+    }
+
     .digitizing .img::before {
         display: none;
     }
 
     .digitizing .two-btn .btn1 {
-        top: 60px;
+        top: 80px;
         left: -15px;
     }
+
     .digitizing .two-btn .btn2 {
-        top: 60px;
+        top: 80px;
         left: -15px;
+    }
+
+    .inset-sbs {
+        padding-bottom: 120px;
     }
 
     .inset-sbs .arrow {
@@ -237,6 +268,8 @@
     .inset-sbs .slick-dots {
         text-align: center;
         left: auto;
+        bottom: -60px;
+        width: 100%;
     }
 
     .inset-sbs .slick-dots li button {
@@ -245,13 +278,23 @@
     }
 
     .inset-sbs .slick-dots li button:before {
-        font-size: 75px;
+        font-size: 60px;
         width: 32px;
         height: 32px;
     }
 
+    .inset-sbs .slick-dots li.slick-active {
+        top: 0;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li.slick-active button {
+        width: 32px;
+        height: 34px;
+    }
+
     .inset-sbs .slick-dots li.slick-active button:before {
-        font-size: 98px;
+        font-size: 86px;
         width: 32px;
         height: 32px;
     }
@@ -431,6 +474,25 @@
     .home_hero .bg-img {
         height: 520px;
     }
+    .quality .shirt-img img{
+        max-width: 75%;
+        margin: auto;
+    }
+    .quality .product-wrap{
+        width: 25%;
+    }
+    .quality .product-wrap .txt {
+        padding: 8px 4px 15px;
+    }
+
+    .quality .product-wrap h6 {
+        font-size: 10px;
+        line-height: 110%;
+        margin-bottom: 4px;
+    }
+    .quality .product-wrap p{
+        font-size: 14px;
+    }
 
     .quality .title_sec h3,
     .quality .title_sec h3 span {
@@ -483,7 +545,7 @@
     /* -------------------------- */
 
 
-    .digitizing .two-btn .bbtn{
+    .digitizing .two-btn .bbtn {
         font-size: 14px;
         padding: 10px 28px;
         left: 0;
@@ -493,6 +555,12 @@
         flex-wrap: nowrap;
         overflow-x: scroll;
         white-space: nowrap;
+        margin-bottom: 20px;
+    }
+
+    .pricing .nav-tabs .nav-link {
+        padding: 10px 24px;
+        font-size: 12px;
     }
 
     .pricing .bg-img {
@@ -513,11 +581,33 @@
         width: 32%;
     }
 
-    .pricing .nav-tabs .nav-link {
-        padding: 10px 24px;
-    }
-
     .easty-step .wrap .txt {
         padding: 0 32px;
+    }
+
+    .digitizing .two-btn {
+        position: relative;
+    }
+
+    .digitizing .two-btn .bbtn {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .digitizing .two-btn .btn2 {
+        left: auto;
+        right: 0;
+    }
+
+    footer .txt p {
+        font-size: 14px;
+    }
+
+    footer .footer-detial p {
+        font-size: 14px;
+    }
+    footer .footer-detial p spans{
+        display: block;
     }
 }
