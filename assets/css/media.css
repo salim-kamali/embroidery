@@ -90,6 +90,13 @@
         right: 2%;
     }
 
+    /* ----- popup ---  */
+    .popup,
+    .popup1,
+    .popup2 {
+        width: 80%;
+    }
+
     /* --------header-------  */
 
     header .navbar .container {
@@ -482,6 +489,15 @@
         border-radius: 30px;
         font-family: 'P-Regular';
         border: 1px solid var(--cf);
+    }
+
+    .popup,
+    .popup1,
+    .popup2 {
+        width: 90%;
+    }
+    .sig-up label, .sig-up p,.sig-up a{
+        font-size: 16px;
     }
 
     .home_hero {
