@@ -164,7 +164,7 @@
 
     .quality .bg-img {
         height: 1402px;
-        top: -304px;
+        /* top: -304px; */
     }
 
     .quality .shirt-img {
@@ -405,7 +405,7 @@
     /* footer .row:first-child .col-lg-6 {
         display: none;
     } */
-    footer .wrap{
+    footer .wrap {
         text-align: center;
     }
 
@@ -486,11 +486,25 @@
 
     .home_hero {
         padding-top: 160px;
-        padding-bottom: 24px;
+        padding-bottom: 210px;
     }
 
     .home_hero .bg-img {
         height: 520px;
+    }
+
+    .quality {
+        margin-top: -190px;
+    }
+
+    .quality .bg-img {
+        height: 1150px;
+    }
+
+    .quality .product-wrap {
+        left: 2%;
+        bottom: 4%;
+        width: 32%;
     }
 
     .quality .shirt-img img {
@@ -593,15 +607,7 @@
         text-align: center;
     }
 
-    .quality .bg-img {
-        height: 1750px;
-    }
 
-    .quality .product-wrap {
-        left: 2%;
-        bottom: 4%;
-        width: 32%;
-    }
 
     .easty-step .wrap .txt {
         padding: 0 32px;
