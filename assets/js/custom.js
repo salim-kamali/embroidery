@@ -106,19 +106,64 @@ $(document).ready(function () {
 
 
     // ------- modal ------- 
-    // $("#contact").on("click", function () {
-    //     $(".pop-up").addClass("active");
-    //     $(".overlay").addClass("active");
-    // });
 
-    // $(".pop-up").on("click", function () {
-    //     $(".pop-up").removeClass("active");
-    // });
 
-    // $(".anther-popup").on("click", function () {
-    //     $(".pop-up2").addClass("active");
-    //     $(".pop-up").removeClass("active");
-    // });
+    $(document).ready(function () {
+        $('.popup, .overlay').hide();
+        $(".register").click(function () {
+            $(".popup, .overlay").show(100);
+        });
+        // ---- login forn open and sign-in form close -- 
+        $(".createbtn").click(function () {
+            $(".popup, .overlay").show(100);
+            $(".popup1").hide();
+        });
+
+        // ----- forget form open and login form close --- 
+        $(".lostbtn").click(function () {
+            $('.popup2, .overlay').hide();
+            $(".popup2, .overlay").show(100);
+            $(".popup1").hide();
+        });
+
+        // -- open login form and close forget form ---- 
+        $(".backlogin").click(function () {
+            $(".popup1").show(100);
+            $(".popup2").hide();
+        });
+
+
+    });
+
+    $(document).ready(function () {
+        $('.popup1, .overlay').hide();
+        $(".loginbtn").click(function () {
+            $(".popup1").show(100);
+            $(".popup").hide();
+        });
+    });
+
+    $(document).on("mouseup", ".overlay", function (e) {
+        $(".popup, .overlay").hide(250);
+    });
+
+    $(document).on("mouseup", ".close", function (e) {
+        $(".popup, .overlay").hide(250);
+    });
+
+    // ----- 1 ---- 
+    $(document).on("mouseup", ".overlay", function (e) {
+        $(".popup1, .overlay").hide(250);
+        $(".popup2, .overlay").hide(250);
+    });
+
+    $(document).on("mouseup", ".close1", function (e) {
+        $(".popup1, .overlay").hide(250);
+    });
+
+    $(document).on("mouseup", ".close2", function (e) {
+        $(".popup2, .overlay").hide(250);
+    });
 
 
 });

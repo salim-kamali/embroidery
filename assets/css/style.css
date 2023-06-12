@@ -216,59 +216,6 @@ ul li {
 }
 
 /* ------  */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    background-color: #0000008a;
-}
-
-.pop-up,
-.pop-up2 {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    z-index: 2;
-    background-color: #0000008a;
-}
-
-.pop,
-.pop2 {
-    /* position: absolute; */
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    height: 40%;
-    color: var(--cf);
-    z-index: 3;
-    transform: translate(50%, 68%);
-    background-color: var(--c1);
-}
-
-.pop-up.active,
-.pop-up2.active,
-.overlay.active {
-    display: block;
-}
-
 /* -----  */
 
 
@@ -377,7 +324,7 @@ header .navbar-nav .btn {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 30;
+    z-index: 5;
     padding: 10px 0;
     background-color: var(--c1);
 }
@@ -428,7 +375,8 @@ header .navbar-nav .btn {
     border-radius: 50px;
     border: 1px solid var(--cf);
 }
-.home-slider .slick-dots li.slick-active button:before{
+
+.home-slider .slick-dots li.slick-active button:before {
     color: unset;
     opacity: 1;
     background-color: var(--cf);
@@ -1865,39 +1813,13 @@ footer .footer-bottom ul li a {
 
 /* form ----  */
 
-.sig-up {
-    color: var(--cf);
-    padding: 30px;
-    background-color: var(--c1);
-}
-
-.sig-up .nav-pills {
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.sig-up .nav-pills .nav-link {
-    font-size: 18px;
-    line-height: 26px;
-    font-family: 'P-Regular';
-    font-weight: 400;
-    padding: 10px 32px;
-    border-radius: 30px;
-    color: var(--c4);
-    margin-right: 10px;
-    text-transform: capitalize;
-    background-color: var(--cf);
-}
-
-.sig-up .nav-pills .nav-link.active {
-    color: var(--cf);
-    background-color: var(--c2);
-}
-
 .sig-up h4 {
     color: var(--cf);
     text-align: center;
-    /* margin-bottom: ; */
+}
+
+.sig-up .form-wrap {
+    position: relative;
 }
 
 .sig-up .form-group {
@@ -1935,12 +1857,83 @@ footer .footer-bottom ul li a {
     padding: 10px 24px;
     text-align: center;
 }
-
-.sig-up .forget {
+.sig-up .bbtn:hover{
     color: var(--cf);
-    margin-top: 8px;
-    display: inline-block;
+}
+
+
+/* form ----  */
+
+/* --------  */
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.80;
+    z-index: 6;
+    display: none;
+    background-color: #000;
+}
+
+.popup,
+.popup1,
+.popup2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 40%;
+    margin: 40px auto 20px;
+    z-index: 7;
+    color: var(--cf);
+    padding: 30px;
+    border-radius: 5px;
+    background-color: var(--c1);
+}
+
+.sig-up p {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "P-Regular";
+    color: var(--cf);
     text-transform: capitalize;
 }
 
-/* form ----  */
+.sig-up a {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "P-Regular";
+    color: var(--cf);
+    text-transform: capitalize;
+}
+
+.sig-up a:hover {
+    color: var(--c2);
+}
+
+.close,
+.close1,
+.close2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    color: #FDFDFD;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* .close:hover,
+.close1:hover {
+    background-color: #004598;
+    transition: all 0.3s ease-out;
+} */
+
+
+/* ----  */
