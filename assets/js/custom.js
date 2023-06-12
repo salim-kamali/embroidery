@@ -78,7 +78,7 @@ $(document).ready(function () {
         arrows: false,
         infinite: true,
         swipe: true,
-        // autoplay: true,
+        autoplay: true,
         speed: 500
     });
 
