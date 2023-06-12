@@ -1,3 +1,17 @@
+/* @media(max-width:3800px) and (min-width:1441px) {
+    .quality .bg-img {
+        top: -150px;
+        background-image: url(../img/bg-svg/quality-01.svg) !important;
+    }
+}
+
+@media(max-width:3800px) and (min-width:2080px) {
+    .quality .bg-img {
+        top: -150px;
+        height: 1850px;
+    }
+} */
+
 @media(max-width:1200px) {
     .digitizing .dig1::before {
         transform: rotate(338deg);
@@ -138,7 +152,8 @@
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    .social-icon{
+
+    .social-icon {
         display: none;
     }
 
@@ -474,13 +489,16 @@
     .home_hero .bg-img {
         height: 520px;
     }
-    .quality .shirt-img img{
+
+    .quality .shirt-img img {
         max-width: 75%;
         margin: auto;
     }
-    .quality .product-wrap{
+
+    .quality .product-wrap {
         width: 25%;
     }
+
     .quality .product-wrap .txt {
         padding: 8px 4px 15px;
     }
@@ -490,7 +508,8 @@
         line-height: 110%;
         margin-bottom: 4px;
     }
-    .quality .product-wrap p{
+
+    .quality .product-wrap p {
         font-size: 14px;
     }
 
@@ -607,7 +626,8 @@
     footer .footer-detial p {
         font-size: 14px;
     }
-    footer .footer-detial p spans{
+
+    footer .footer-detial p spans {
         display: block;
     }
 }

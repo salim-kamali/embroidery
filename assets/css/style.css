@@ -428,7 +428,7 @@ header .navbar-nav .btn {
     border-radius: 50px;
     border: 1px solid var(--cf);
 }
-.slick-dots li.slick-active button:before{
+.home-slider .slick-dots li.slick-active button:before{
     color: unset;
     opacity: 1;
     background-color: var(--cf);
