@@ -402,8 +402,11 @@
 
     /* ---- Footer ----  */
 
-    footer .row:first-child .col-lg-6 {
+    /* footer .row:first-child .col-lg-6 {
         display: none;
+    } */
+    footer .wrap{
+        text-align: center;
     }
 
     footer .row:first-child .txt {
