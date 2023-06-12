@@ -71,16 +71,16 @@ $(document).ready(function () {
             }]
     });
 
-    // $(".home-slider").slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     dots: true,
-    //     arrows: false,
-    //     infinite: true,
-    //     swipe: true,
-    //     autoplay: true,
-    //     speed: 500
-    // });
+    $(".home-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        swipe: true,
+        // autoplay: true,
+        speed: 500
+    });
 
     if ($(window).width() < 990) { }
 
