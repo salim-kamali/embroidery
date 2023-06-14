@@ -564,6 +564,9 @@ header .navbar-nav .btn {
     position: relative;
     z-index: 2;
 }
+.who-we .who-logo img{
+    max-width: 105%;
+}
 
 .who-we h5 {
     font-weight: 600;

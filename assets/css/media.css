@@ -170,8 +170,8 @@
     }
 
     .quality .bg-img {
-        height: 1402px;
-        top: -80px;
+        height: 1080px;
+        top: -60px;
     }
 
     .quality .shirt-img {
@@ -183,13 +183,27 @@
     }
 
     /* .who-we ---  */
+    .who-we .who-logo img {
+        max-width: 100%;
+    }
+
     .who-we .bg-img {
         top: -150px;
-        height: 1220px;
+        height: 1620px;
     }
 
     .who-we .who-img {
-        display: none;
+        /* display: none; */
+        max-width: 40%;
+        bottom: -10%;
+    }
+
+    .who-we .who-img .play-icon {
+        font-size: 1.2rem;
+        line-height: 56px;
+        width: 56px;
+        height: 56px;
+        transform: translate(-20%, -46%);
     }
 
     /* --- what_we_do ---  */
@@ -496,7 +510,10 @@
     .popup2 {
         width: 90%;
     }
-    .sig-up label, .sig-up p,.sig-up a{
+
+    .sig-up label,
+    .sig-up p,
+    .sig-up a {
         font-size: 16px;
     }
 
@@ -617,12 +634,27 @@
 
     .pricing .bg-img {
         height: 2350px;
+        top: -120px;
     }
 
     .who-we .img {
         text-align: center;
     }
 
+
+    .who-we .who-img {
+        /* display: none; */
+        max-width: 52%;
+        bottom: -5%;
+    }
+
+    .who-we .who-img .play-icon {
+        font-size: 1rem;
+        line-height: 48px;
+        width: 48px;
+        height: 48px;
+        transform: translate(-20%, -46%);
+    }
 
 
     .easty-step .wrap .txt {
