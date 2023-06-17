@@ -34,7 +34,7 @@
                         <img src="assets/img/logo-md.png" alt="" class="d-lg-none d-md-block">
                     </a>
                     <div class="div d-flex align-items-center">
-                        <a class="btn d-block d-lg-none" data-bs-toggle="modal" data-bs-target="#sigup">Sign Up</a>
+                        <a class="btn register d-block d-lg-none ">Sign Up</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
                             <a class="nav-link" href="faqs.html">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact us</a>
+                            <a class="nav-link" href="contact-us.html">contact us</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn register">Sign Up</a>
@@ -73,7 +73,7 @@
             </div>
         </nav>
     </header>
-    
+
     <section class="banner_hero about_hero" style="background-image: url(assets/img/about-hero.jpg);">
         <div class="container">
             <div class="row justify-content-center">
@@ -283,6 +283,7 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- --- Bootstrap ---  -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -292,8 +293,112 @@
     <!-- --- Slick slider ---  -->
     <script src="assets/js/slick.js"></script>
 
+    <!-- ---- aos animation ----  -->
+    <script src="assets/js/aos.js"></script>
+
     <!-- --- Custom Js ---  -->
     <script src="assets/js/custom.js"></script>
+
+    <!-- ---------- Start Modals ----  -->
+    <div class="sig-up">
+        <div class="overlay"></div>
+
+        <!-- --- sigup --  -->
+        <div class="signup popup">
+            <div class="form-wrap">
+                <div class="title_sec">
+                    <h4>sign up</h4>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">password</label>
+                        <input type="password" name="" id="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">confirm password</label>
+                        <input type="password" name="" id="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-check form-group">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                            Accept Terms & Conditions
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" class="bbtn">sign up</a>
+                    </div>
+                </form>
+                <a class="close" href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i> </a>
+            </div>
+            <p>Already have an account? <a href="#" class="loginbtn">Login</a></p>
+
+        </div>
+
+        <!-- -login  -->
+        <div class="login popup1">
+            <div class="form-wrap">
+                <div class="title_sec">
+                    <h4>Login</h4>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                    <div class="form-group">
+                        <label for="">password</label>
+                        <input type="password" name="" id="" class="form-control" placeholder=""
+                            aria-describedby="helpId">
+                    </div>
+                    <div class="form-check form-group">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+                            Remember me
+                        </label>
+                    </div>
+                    <a href="#" class="lostbtn">Lost your password?</a> <br>
+                    <a href="#" class="createbtn">Create an account?</a>
+                    <div class="form-group">
+                        <a href="#" class="bbtn">login</a>
+                    </div>
+                </form>
+                <a class="close1" href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+
+        <!-- -login  -->
+        <div class="forget popup2">
+            <div class="form-wrap">
+                <div class="title_sec">
+                    <h4>FORGET PASSWORD</h4>
+                </div>
+                <form action="">
+                    <div class="form-group">
+                        <label for="">email</label>
+                        <input type="email" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                    <p>Go back to Login? <a href="#" class="backlogin">LOGIN</a></p>
+                    <div class="form-group">
+                        <a href="#" class="bbtn">rset</a>
+                    </div>
+                </form>
+                <a class="close2" href="#"> <i class="fa fa-times-circle" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- ---------- End Modals ----  -->
+
 
 </body>
 

@@ -1609,6 +1609,17 @@ header .navbar-nav .btn {
 /* --------- End Srevice detail ---  */
 
 
+/* -------  */
+
+.contact_page{
+    background-color: var(--c1);
+}
+
+.contact_page .bg-img{
+    display: none;
+}
+/* -----  */
+
 
 /* ------ Start Our faqs Page -----  */
 
@@ -1869,7 +1880,9 @@ footer .footer-bottom ul li a {
 
 /* --------  */
 
-
+body.show-popup{
+    overflow-y: hidden;
+}
 
 .overlay {
     position: fixed;
@@ -1898,6 +1911,9 @@ footer .footer-bottom ul li a {
     padding: 30px;
     border-radius: 5px;
     background-color: var(--c1);
+}
+.popup{
+    margin: 5px auto;
 }
 
 .sig-up p {

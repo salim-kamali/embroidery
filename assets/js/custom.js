@@ -104,66 +104,77 @@ $(document).ready(function () {
         });
     }
 
-
-    // ------- modal ------- 
-
-
-    $(document).ready(function () {
-        $('.popup, .overlay').hide();
-        $(".register").click(function () {
-            $(".popup, .overlay").show(100);
-        });
-        // ---- login forn open and sign-in form close -- 
-        $(".createbtn").click(function () {
-            $(".popup, .overlay").show(100);
-            $(".popup1").hide();
-        });
-
-        // ----- forget form open and login form close --- 
-        $(".lostbtn").click(function () {
-            $('.popup2, .overlay').hide();
-            $(".popup2, .overlay").show(100);
-            $(".popup1").hide();
-        });
-
-        // -- open login form and close forget form ---- 
-        $(".backlogin").click(function () {
-            $(".popup1").show(100);
-            $(".popup2").hide();
-        });
-
-
+    // ---- aos Animation ---
+    
+    AOS.init({
+        easing: 'ease-in-out-sine'
     });
 
-    $(document).ready(function () {
-        $('.popup1, .overlay').hide();
-        $(".loginbtn").click(function () {
-            $(".popup1").show(100);
-            $(".popup").hide();
-        });
+});
+
+
+// ------- modal ------- 
+
+
+$(document).ready(function () {
+    $('.popup, .overlay').hide();
+    $(".register").click(function () {
+        $(".popup, .overlay").show(100);
+        $("body").addClass("show-popup");
+    });
+    // ---- login forn open and sign-in form close -- 
+    $(".createbtn").click(function () {
+        $(".popup, .overlay").show(100);
+        $(".popup1").hide();
     });
 
-    $(document).on("mouseup", ".overlay", function (e) {
-        $(".popup, .overlay").hide(250);
+    // ----- forget form open and login form close --- 
+    $(".lostbtn").click(function () {
+        $('.popup2, .overlay').hide();
+        $(".popup2, .overlay").show(100);
+        $(".popup1").hide();
     });
 
-    $(document).on("mouseup", ".close", function (e) {
-        $(".popup, .overlay").hide(250);
-    });
-
-    // ----- 1 ---- 
-    $(document).on("mouseup", ".overlay", function (e) {
-        $(".popup1, .overlay").hide(250);
-        $(".popup2, .overlay").hide(250);
-    });
-
-    $(document).on("mouseup", ".close1", function (e) {
-        $(".popup1, .overlay").hide(250);
-    });
-
-    $(document).on("mouseup", ".close2", function (e) {
-        $(".popup2, .overlay").hide(250);
+    // -- open login form and close forget form ---- 
+    $(".backlogin").click(function () {
+        $(".popup1").show(100);
+        $(".popup2").hide();
     });
 
 
+});
+
+$(document).ready(function () {
+    $('.popup1, .overlay').hide();
+    $(".loginbtn").click(function () {
+        $(".popup1").show(100);
+        $(".popup").hide();
+    });
+});
+
+$(document).on("mouseup", ".overlay", function (e) {
+    $(".popup, .overlay").hide(250);
+    $("body").removeClass("show-popup");
+});
+
+$(document).on("mouseup", ".close", function (e) {
+    $(".popup, .overlay").hide(250);
+    $("body").removeClass("show-popup");
+});
+
+// ----- 1 ---- 
+$(document).on("mouseup", ".overlay", function (e) {
+    $(".popup1, .overlay").hide(250);
+    $(".popup2, .overlay").hide(250);
+    $("body").removeClass("show-popup");
+});
+
+$(document).on("mouseup", ".close1", function (e) {
+    $(".popup1, .overlay").hide(250);
+    $("body").removeClass("show-popup");
+});
+
+$(document).on("mouseup", ".close2", function (e) {
+    $(".popup2, .overlay").hide(250);
+    $("body").removeClass("show-popup");
 });
