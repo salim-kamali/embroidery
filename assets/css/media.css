@@ -494,6 +494,10 @@
         padding-top: 20px;
     } */
 
+    section{
+        overflow-x:hidden;
+    }
+
     header .nav-flex .btn {
         font-weight: 600;
         font-size: 14px;
@@ -635,6 +639,9 @@
     .pricing .bg-img {
         height: 2350px;
         top: -120px;
+    }
+    .who-we{
+        overflow-x: clip;
     }
 
     .who-we .img {
