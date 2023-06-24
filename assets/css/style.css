@@ -5,27 +5,27 @@
 
 @font-face {
     font-family: "P-Light";
-    src: url("../font/Poppins-Light.ttf");
+    src: url("../font/AdventPro-Light.ttf");
 }
 
 @font-face {
     font-family: "P-Regular";
-    src: url("../font/Poppins-Regular.ttf");
+    src: url("../font/AdventPro-Regular.ttf");
 }
 
 @font-face {
     font-family: "P-Medium";
-    src: url("../font/Poppins-Medium.ttf");
+    src: url("../font/AdventPro-Medium.ttf");
 }
 
 @font-face {
     font-family: "P-SemiBold";
-    src: url("../font/Poppins-SemiBold.ttf");
+    src: url("../font/AdventPro-SemiBold.ttf");
 }
 
 @font-face {
     font-family: "P-Bold";
-    src: url("../font/Poppins-Bold.ttf");
+    src: url("../font/AdventPro-Bold.ttf");
 }
 
 
@@ -362,6 +362,9 @@ header .navbar-nav .btn {
     background-color: var(--c1);
 }
 
+header.affix .navbar-brand{
+    padding-bottom: 15px;
+}
 header.affix .navbar-brand::before {
     display: none;
 }
