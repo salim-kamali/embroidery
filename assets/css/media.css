@@ -123,10 +123,16 @@
     }
 
     header .navbar-nav {
+        position: relative;
         align-items: start;
         padding: 20px 32px;
         /* color: ; */
+        z-index: 1;
         background-color: var(--c1);
+    }
+
+    header .nav-tb-collapse .top {
+        display: none;
     }
 
     header .navbar-toggler {

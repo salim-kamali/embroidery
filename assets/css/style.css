@@ -369,6 +369,39 @@ header.affix .navbar-brand::before {
     display: none;
 }
 
+header .navbar-collapse{
+    /* flex-direction: column; */
+    justify-content: end;
+}
+header .nav-tb-collapse{
+    width: 100%;
+}
+header .navbar-collapse .top{
+    text-align: center;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #3A3A3A;
+}
+header.affix .navbar-collapse .top{
+    border-bottom: 1px solid #fff;
+}
+header .navbar-collapse .top a{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cf);
+    margin-right: 24px;
+    font-family: "p-Regular";
+}
+header .navbar-collapse .top a:last-child{
+    margin-right: 0;
+}
+header .navbar-collapse .top a i{
+    margin-right: 10px;
+}
+header .bottom .navbar-nav{
+    justify-content: end;
+}
+
 /* // sticky header ends */
 
 /* ---- End header ---  */
