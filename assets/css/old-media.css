@@ -69,7 +69,7 @@
 
     h3,
     h3 span {
-        font-size: 40px;
+        font-size: 20px;
         line-height: 135%;
     }
 
@@ -164,131 +164,103 @@
         display: none;
     }
 
-    .home_hero {
-        padding-top: 230px;
-        padding-bottom: 160px;
-    }
-
     /* ---- quality ---  */
-    .quality .row {
-        flex-direction: column-reverse;
+    .quality {
+        padding-bottom: 120px;
     }
 
-    .quality h2 {
-        font-size: 48px;
-        margin-bottom: 40px;
-        line-height: 60px;
+    .quality .bg-img {
+        height: 1080px;
+        top: -60px;
     }
 
-    .quality .img {
+    .quality .shirt-img {
         text-align: center;
     }
 
-
-    /* .we-make ---  */
-    .we-make {
-        padding-top: 110px;
-        padding-bottom: 80px;
+    .quality .product-wrap {
+        left: 0;
     }
 
-    .we-make .bg-img {
-        height: 820px;
+    /* .who-we ---  */
+    .who-we .who-logo img {
+        max-width: 100%;
     }
 
-    .we-make .row {
-        flex-direction: column-reverse;
+    .who-we .bg-img {
+        top: -150px;
+        height: 1620px;
     }
 
-    .we-make .img {
-        text-align: center;
+    .who-we .who-img {
+        /* display: none; */
+        max-width: 40%;
+        bottom: -10%;
+    }
+
+    .who-we .who-img .play-icon {
+        font-size: 1.2rem;
+        line-height: 56px;
+        width: 56px;
+        height: 56px;
+        transform: translate(-20%, -46%);
     }
 
     /* --- what_we_do ---  */
-    .brands {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .brands .brands-logo {
-        justify-content: center;
-        margin-top: 40px;
-    }
-
-    .brands .brands-logo .img {
-        text-align: center;
-    }
-
-    /* ----------  */
-
-    .easty-step .wrap {
-        margin-bottom: 34px;
-    }
-
-    .easty-step .col-md-6:last-child .wrap {
-        margin-bottom: 0;
-    }
-
-
-    /* ----------------  */
-    .we-offer {
-        margin-top: 60px;
+    .what-do {
         margin-bottom: 60px;
     }
 
-    .we-offer .txt {
-        margin-bottom: 40px;
+    .what-do img {
+        width: 100%;
     }
 
-    /* .we-offer img:last-child{
-        margin-bottom: 14px;
-    } */
-
-    /* ---- Start Service Page ----  */
-    .service .txt {
-        margin-top: 20px;
+    .what-do .txt {
+        margin-bottom: 24px;
     }
 
-    .service .wrap h5 {
-        margin-bottom: 10px;
-    }
-
-    .service .wrap .btn {
+    .what-do .mrg-btm {
         margin-bottom: 0;
     }
 
-    .service .wrap {
-        margin-bottom: 28px;
+    .what-do .row:nth-last-child(2) {
+        margin-bottom: 32px;
+        flex-direction: column-reverse;
     }
 
-    .service .col-md-6:nth-last-child(3) .wrap {
-        margin-bottom: 28px;
+    .printing .shirt::before {
+        display: none;
     }
 
-    .service .col-md-6:nth-last-child(2) .wrap,
-    .service .col-md-6:nth-last-child(1) .wrap {
-        margin-bottom: 0;
+    .printing .shirt {
+        padding-bottom: 80px;
     }
 
-    /* ---- End Service Page ----  */
-
-
-    /* ---------  */
-
-    .why-choose .wrap:last-child {
-        margin-bottom: 16px;
+    .printing .lock-btn {
+        position: absolute;
+        top: auto;
+        right: 0;
+        left: 0;
+        bottom: 5%;
     }
 
-    .why-choose .col-lg-3:last-child .wrap:last-child {
-        margin-bottom: 0;
+    .printing .lock-btn p {
+        top: auto;
+        left: auto;
+        transform: rotate(0deg);
     }
-
-    /* -------  */
 
     .pricing .bg-img {
-        height: 1424px;
+        height: 1850px;
     }
 
-    /* ---------  */
+    .pricing .wrap {
+        margin-bottom: 20px;
+    }
+
+    .pricing .col-md-6:last-child .wrap {
+        margin-bottom: 0;
+    }
 
     .digitizing {
         padding-bottom: 48px;
@@ -308,6 +280,60 @@
         left: -15px;
     }
 
+    .inset-sbs {
+        padding-bottom: 120px;
+    }
+
+    .inset-sbs .arrow {
+        top: -1%;
+    }
+
+    .inset-sbs .bg-img {
+        height: 1400px;
+    }
+
+    .inset-sbs img {
+        margin: auto;
+    }
+
+    .inset-sbs .txt {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .inset-sbs .slick-dots {
+        text-align: center;
+        left: auto;
+        bottom: -60px;
+        width: 100%;
+    }
+
+    .inset-sbs .slick-dots li button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li button:before {
+        font-size: 60px;
+        width: 32px;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li.slick-active {
+        top: 0;
+        height: 32px;
+    }
+
+    .inset-sbs .slick-dots li.slick-active button {
+        width: 32px;
+        height: 34px;
+    }
+
+    .inset-sbs .slick-dots li.slick-active button:before {
+        font-size: 86px;
+        width: 32px;
+        height: 32px;
+    }
 
     .process .bg-img {
         height: 830px;
@@ -321,21 +347,62 @@
         font-size: 16px;
     }
 
-    /* ---------------------  */
-
-    .blog .txt h5 span {
-        display: unset;
+    .blog .slick-slide.slick-current .item {
+        transform: scale(1);
     }
 
-    .blog .wrap {
-        margin-bottom: 32px;
+    .slider-arrows .slider-arrow {
+        top: 64%;
     }
 
-    .blog .col-md-6:last-child .wrap {
-        margin-bottom: 0;
+    .blog .item {
+        padding: 0 40px;
+    }
+
+    .blog .img img {
+        border-radius: 20px;
+    }
+
+    .blog .date p {
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .blog .txt {
+        padding: 0 15px;
+        text-align: center;
     }
 
     /* ---- End About _us Page ----  */
+
+
+    /* ---- Start Service Page ----  */
+    .service .txt {
+        margin-top: 20px;
+    }
+
+    .service .wrap h5 {
+        margin-bottom: 10px;
+    }
+
+    .service .wrap .btn {
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+
+    .service .wrap {
+        margin-bottom: 28px;
+    }
+
+    .service .col-md-6:nth-last-child(3) .wrap {
+        margin-bottom: 28px;
+    }
+
+    .service .col-md-6:nth-last-child(2) .wrap,
+    .service .col-md-6:nth-last-child(1) .wrap {
+        margin-bottom: 0;
+    }
+
+    /* ---- End Service Page ----  */
 
 
 
@@ -423,37 +490,12 @@
 
 @media(max-width:767px) {
 
-    h2,
-    h2 span {
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    h3,
-    h3 span {
-        font-size: 30px;
-    }
-
     /* header {
         padding-top: 20px;
     } */
 
-    /* section {
-        overflow-x: clip;
-    } */
-    .quality h2 {
-        font-size: 42px;
-        line-height: 52px;
-    }
-
-    .we-make h2 {
-        font-size: 30px;
-        line-height: 45px;
-    }
-
-    .easty-step h3 {
-        font-size: 30px;
-        line-height: 45px;
+    section{
+        overflow-x:clip;
     }
 
     header .nav-flex .btn {
@@ -465,17 +507,6 @@
         border-radius: 30px;
         font-family: 'P-Regular';
         border: 1px solid var(--cf);
-    }
-
-    header .navbar-brand {
-        width: 50%;
-    }
-
-    header .navbar-brand::before {
-        bottom: -41px;
-        border-left: 88px solid transparent;
-        border-right: 88px solid transparent;
-        border-top: 42px solid #fff;
     }
 
     .popup,
@@ -490,15 +521,18 @@
         font-size: 16px;
     }
 
-    /* .home_hero {
+    .home_hero {
         padding-top: 160px;
         padding-bottom: 210px;
-    } */
+    }
 
-    /* .home_hero .bg-img {
+    .home_hero .bg-img {
         height: 520px;
-    } */
+    }
 
+    .quality {
+        margin-top: -190px;
+    }
 
     .quality .bg-img {
         height: 1150px;
@@ -603,11 +637,10 @@
     }
 
     .pricing .bg-img {
-        height: 1980px;
+        height: 2350px;
         top: -120px;
     }
-
-    .who-we {
+    .who-we{
         overflow-x: clip;
     }
 
@@ -648,32 +681,6 @@
     .digitizing .two-btn .btn2 {
         left: auto;
         right: 0;
-    }
-
-    .we-offer img:last-child {
-        margin-bottom: 14px;
-    }
-
-    .we-offer .col-md-5 img:last-child {
-        margin-bottom: 0;
-    }
-
-    .testimonials {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
-
-    .testimonials .slider-arrows .slider-arrow {
-        top: auto;
-        bottom: 0;
-    }
-
-    .testimonials .slider-arrows .prev {
-        left: 34%;
-    }
-
-    .testimonials .slider-arrows .next {
-        right: 34%;
     }
 
     footer .txt p {
