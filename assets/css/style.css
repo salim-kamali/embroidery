@@ -276,19 +276,35 @@ header .navbar-brand {
     display: inherit;
     background-color: var(--cf);
 }
+header .navbar-brand img{
+    position: relative;
+}
 
 header .navbar-brand::before {
     position: absolute;
     content: '';
+    top: 0;
     left: 0;
     right: 0;
-    bottom: -58px;
+    bottom: 0px;
+    width: 100%;
+    height: 180px;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/icons/logo-bg.svg);
+
+
+    /* right: 0;
+    bottom: -57px;
     width: 0;
     height: 0;
     border-left: 132px solid transparent;
     border-right: 132px solid transparent;
-    border-top: 58px solid #fff;
+    border-top: 58px solid #fff; */
 }
+
 
 
 header .navbar-nav .nav-link {
@@ -362,43 +378,51 @@ header .navbar-nav .btn {
     background-color: var(--c1);
 }
 
-header.affix .navbar-brand{
+header.affix .navbar-brand {
     padding-bottom: 15px;
 }
+
 header.affix .navbar-brand::before {
     display: none;
 }
 
-header .navbar-collapse{
+header .navbar-collapse {
     /* flex-direction: column; */
     justify-content: end;
 }
-header .nav-tb-collapse{
+
+header .nav-tb-collapse {
     width: 100%;
 }
-header .navbar-collapse .top{
+
+header .navbar-collapse .top {
     text-align: center;
     padding-bottom: 14px;
     margin-bottom: 14px;
     border-bottom: 1px solid #3A3A3A;
 }
-header.affix .navbar-collapse .top{
+
+header.affix .navbar-collapse .top {
     border-bottom: 1px solid #fff;
 }
-header .navbar-collapse .top a{
+
+header .navbar-collapse .top a {
     font-size: 18px;
     font-weight: 400;
     color: var(--cf);
     margin-right: 24px;
     font-family: "p-Regular";
 }
-header .navbar-collapse .top a:last-child{
+
+header .navbar-collapse .top a:last-child {
     margin-right: 0;
 }
-header .navbar-collapse .top a i{
+
+header .navbar-collapse .top a i {
     margin-right: 10px;
 }
-header .bottom .navbar-nav{
+
+header .bottom .navbar-nav {
     justify-content: end;
 }
 
@@ -576,7 +600,8 @@ header .bottom .navbar-nav{
     padding-bottom: 180px;
     /* background-color: var(--c1); */
 }
-.we-make .bg-img{
+
+.we-make .bg-img {
     height: 690px;
     top: 0;
 }
@@ -1492,10 +1517,12 @@ header .bottom .navbar-nav{
     position: relative;
     border-radius: 20px;
 }
-.about_us .video-img img{
+
+.about_us .video-img img {
     border-radius: 20px;
 }
-.about_us .video-img::before{
+
+.about_us .video-img::before {
     position: absolute;
     content: '';
     top: 0;
