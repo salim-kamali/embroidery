@@ -308,6 +308,10 @@ header .navbar-brand img {
     position: relative;
 }
 
+header .navbar-brand .lg-white {
+    display: none;
+}
+
 header .navbar-brand::before {
     position: absolute;
     content: '';
@@ -407,7 +411,15 @@ header .navbar-nav .btn {
 }
 
 header.affix .navbar-brand {
-    padding-bottom: 15px;
+    padding: 0;
+    background-color: unset;
+}
+
+header.affix .navbar-brand .lg-white{
+    display: block;
+}
+header.affix .navbar-brand .lg-red{
+    display: none;
 }
 
 header.affix .navbar-brand::before {
@@ -449,10 +461,11 @@ header .navbar-nav .dropdown-menu li::before {
     border: 0.3px solid #707070;
 }
 
-header .navbar-nav .dropdown-menu li:last-child{
+header .navbar-nav .dropdown-menu li:last-child {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 header .navbar-nav .dropdown-menu li:last-child::before {
     display: none;
 }
