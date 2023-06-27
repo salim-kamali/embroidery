@@ -187,12 +187,12 @@ a {
 }
 
 .btn-outline-yellow:hover {
-    color:  var(--cf);
+    color: var(--cf);
     border: 1px solid transparent;
     background-color: var(--c2);
 }
 
-.quote-btn{
+.quote-btn {
     text-align: center;
     margin-top: 70px;
 }
@@ -303,7 +303,8 @@ header .navbar-brand {
     display: inherit;
     background-color: var(--cf);
 }
-header .navbar-brand img{
+
+header .navbar-brand img {
     position: relative;
 }
 
@@ -422,6 +423,40 @@ header .nav-tb-collapse {
     width: 100%;
 }
 
+header .navbar-nav .nav-link.active,
+header .navbar-nav .nav-link.show {
+    color: var(--cf);
+}
+
+header .navbar-nav .dropdown-menu li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+header .navbar-nav .dropdown-menu li a {
+    padding-bottom: 0;
+}
+
+header .navbar-nav .dropdown-menu li::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    border: 0.3px solid #707070;
+}
+
+header .navbar-nav .dropdown-menu li:last-child{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+header .navbar-nav .dropdown-menu li:last-child::before {
+    display: none;
+}
+
 header .navbar-collapse .top {
     text-align: center;
     padding-bottom: 14px;
@@ -430,6 +465,7 @@ header .navbar-collapse .top {
 }
 
 header.affix .navbar-collapse .top {
+    display: none;
     border-bottom: 1px solid #fff;
 }
 
@@ -512,9 +548,10 @@ header .bottom .navbar-nav {
 }
 
 
-.main_home .slick-dotted.slick-slider{
+.main_home .slick-dotted.slick-slider {
     margin-bottom: 0;
 }
+
 .home-slider .slick-dots {
     top: 48%;
     right: 8%;
@@ -613,7 +650,8 @@ header .bottom .navbar-nav {
     padding-bottom: 80px;
     background-color: var(--cf);
 }
-.quality .arr-down{
+
+.quality .arr-down {
     position: absolute;
     top: -54px;
     height: 104px;
