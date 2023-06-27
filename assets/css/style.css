@@ -411,7 +411,7 @@ header .navbar-nav .btn {
 }
 
 header.affix .navbar-brand {
-    padding: 0;
+    padding: 10px 0;
     background-color: unset;
 }
 
