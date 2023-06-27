@@ -492,11 +492,12 @@
     }
 
     header .navbar-brand {
-        width: 50%;
+        width: 40%;
+        padding: 5px 5px 0;
     }
 
     header .navbar-brand::before {
-        height: 118px;
+        height: 80px;
     }
 
     .popup,

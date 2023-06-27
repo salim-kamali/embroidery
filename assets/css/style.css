@@ -115,10 +115,10 @@ h5 span {
 }
 
 p {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 22px;
-    font-family: "P-Regular";
+    line-height: 28px;
+    font-family: "P-Medium";
     margin: 0;
 }
 
@@ -1383,7 +1383,19 @@ header .bottom .navbar-nav {
     color: #201C1C;
     margin-top: 6px;
 }
-
+.slick-dots li button{
+    border-radius: 50px;
+    border: 2px solid #031526;
+}
+.slick-dots li button:before{
+    font-size: 52px;
+    color: transparent;
+    opacity: 1;
+    line-height: 20.7px;
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+}
 
 
 /* --- End testimonials ---  */
