@@ -25,13 +25,14 @@
 
 <body>
 
+
     <header class="default_sticky" data-top="70">
         <nav class="navbar navbar-expand-lg ">
             <div class="container">
                 <div class="nav-flex">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo-head.png" alt="" class="d-none d-lg-block">
-                        <img src="assets/img/logo-md.png" alt="" class="d-lg-none d-md-block">
+                    <a class="navbar-brand img" href="index.html">
+                        <img src="assets/img/logo.png" alt="" class="">
+                        <!-- <img src="assets/img/logo-md.png" alt="" class="d-lg-none d-md-block"> -->
                     </a>
                     <div class="div d-flex align-items-center">
                         <a class="btn register d-block d-lg-none ">Sign Up</a>
@@ -43,32 +44,56 @@
                     </div>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="our-service.html">services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about_us.html">about us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="faqs.html">FAQs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">contact us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn register">Sign Up</a>
-                        </li>
-                    </ul>
+                    <div class="nav-tb-collapse">
+                        <div class="top">
+                            <a href="#"> <span> <i class="fas fa-envelope" aria-hidden="true"></i> </span>
+                                info@paramount.com</a>
+                            <a href="#"> <span><i class="fas fa-phone-volume    "></i></span>
+                                514-739-2331 </a>
+                        </div>
+                        <div class="bottom">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <!-- <a class="nav-link" href="our-service.html">services</a> -->
+                                </li><li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="our-service.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        services
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="#">Embroidery </a></li>
+                                      <li><a class="dropdown-item" href="#">Chenille</a></li>
+                                      <li><a class="dropdown-item" href="#">Woven</a></li>
+                                      <li><a class="dropdown-item" href="#">Sublimated</a></li>
+                                      <li><a class="dropdown-item" href="#">PVC</a></li>
+                                      <li><a class="dropdown-item" href="#">Applique</a></li>
+                                      <li><a class="dropdown-item" href="#">Sequin</a></li>
+                                      <li><a class="dropdown-item" href="#">Leather</a></li>
+                                    </ul>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about_us.html">about us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faqs.html">FAQs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html">contact us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn register">Sign Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
