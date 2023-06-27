@@ -889,6 +889,16 @@ header .bottom .navbar-nav {
     opacity: 0.5;
 }
 
+.pricing .arr-down {
+    position: absolute;
+    top: -50px;
+    height: 104px;
+    width: 104px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
 .pricing h3 span {
     color: var(--c2);
 }
