@@ -117,7 +117,7 @@ h5 span {
 p {
     font-weight: 500;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 22px;
     font-family: "P-Medium";
     margin: 0;
 }
@@ -260,6 +260,12 @@ ul li {
 }
 
 /* ------  */
+
+.title_sec p {
+    font-size: 22px;
+    line-height: 38px;
+}
+
 /* -----  */
 
 
@@ -415,10 +421,11 @@ header.affix .navbar-brand {
     background-color: unset;
 }
 
-header.affix .navbar-brand .lg-white{
+header.affix .navbar-brand .lg-white {
     display: block;
 }
-header.affix .navbar-brand .lg-red{
+
+header.affix .navbar-brand .lg-red {
     display: none;
 }
 
@@ -706,6 +713,11 @@ header .bottom .navbar-nav {
     line-height: 50px;
 }
 
+.we-make p {
+    font-size: 20px;
+    line-height: 38px;
+}
+
 /* ---- end we-make ---  */
 
 /* ---- Start brand ---  */
@@ -721,6 +733,12 @@ header .bottom .navbar-nav {
 
 .brands .brands-logo .col-md-5:nth-last-child(1) .img {
     margin-bottom: 0;
+}
+
+.brands p {
+    font-size: 20px;
+    line-height: 38px;
+    color: #1D1E27;
 }
 
 /* --- End brands ---  */
@@ -801,6 +819,11 @@ header .bottom .navbar-nav {
     margin-bottom: 0;
 }
 
+.we-offer p {
+    font-size: 20px;
+    line-height: 38px;
+}
+
 /* ---- End we-offer ---  */
 
 
@@ -818,6 +841,11 @@ header .bottom .navbar-nav {
 
 .service h3 span {
     color: var(--c2);
+}
+
+.service .title_sec p {
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .service .wrap {
@@ -962,6 +990,11 @@ header .bottom .navbar-nav {
     margin-bottom: 34px;
 }
 
+.pricing .title_sec p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
 .pricing .head {
     color: var(--cf);
     text-align: center;
@@ -971,9 +1004,9 @@ header .bottom .navbar-nav {
 }
 
 .pricing .head h4 {
-    font-family: 'P-Regular';
+    font-family: 'P-SemiBold';
     font-weight: 500;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 37px;
     color: #222222;
     letter-spacing: 0.08em;
@@ -988,7 +1021,10 @@ header .bottom .navbar-nav {
 .pricing .content ul li {
     position: relative;
     text-align: center;
-    /* padding-left: 36px; */
+    line-height: 22px;
+    font-size: 18px;
+    color: #6B6B6B;
+    font-family: "P-Medium";
     padding-bottom: 20px;
     margin-bottom: 15px;
 }
@@ -1068,7 +1104,7 @@ header .bottom .navbar-nav {
 }
 
 .pricing .price .numb {
-    font-family: 'P-Regular';
+    font-family: 'P-SemiBold';
     font-weight: 400;
     font-size: 70px;
     line-height: 76px;
@@ -1090,6 +1126,11 @@ header .bottom .navbar-nav {
     margin-bottom: 40px;
 }
 
+.why-choose .title_sec p {
+    font-size: 22px;
+    line-height: 40px;
+}
+
 .why-choose .wrap {
     margin-bottom: 16px;
 }
@@ -1106,11 +1147,11 @@ header .bottom .navbar-nav {
 }
 
 .why-choose .info h5 {
-    font-size: 16px;
+    font-size: 18px;
     color: #253E54;
     font-weight: 600;
     margin-bottom: 8px;
-    font-family: "p-Regular";
+    font-family: "P-Bold";
     text-transform: uppercase;
 }
 
@@ -1318,7 +1359,9 @@ header .bottom .navbar-nav {
 }
 
 .process .txt p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "P-SemiBold";
 }
 
 /* ----- End process ---- */
@@ -1367,6 +1410,7 @@ header .bottom .navbar-nav {
 
 .testimonials .txt p {
     margin-top: 24px;
+    line-height: 24px;
 }
 
 .testimonials .profile {
@@ -1380,20 +1424,25 @@ header .bottom .navbar-nav {
 .testimonials .profile h6 {
     font-size: 16px;
     font-weight: 500;
+    font-family: "P-Medium";
+    line-height: 22px;
     color: #201C1C;
     margin-top: 6px;
 }
-.slick-dots li button{
+
+.slick-dots li button {
     border-radius: 50px;
     border: 2px solid #031526;
 }
-.slick-dots li button:before{
+
+.slick-dots li button:before {
     font-size: 52px;
     color: transparent;
     opacity: 1;
     line-height: 20.7px;
 }
-.slick-dots li.slick-active button:before{
+
+.slick-dots li.slick-active button:before {
     opacity: 1;
 }
 
@@ -1474,7 +1523,8 @@ header .bottom .navbar-nav {
 }
 
 .blog .txt p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .blog .txt a {
@@ -1621,6 +1671,11 @@ header .bottom .navbar-nav {
     margin-bottom: 0px;
 }
 
+.about_us p {
+    font-size: 22px;
+    line-height: 38px;
+}
+
 .about_us h3 span {
     color: var(--c2);
 }
@@ -1704,6 +1759,11 @@ header .bottom .navbar-nav {
 
 .what-do .txt h3 {
     color: var(--c4);
+}
+
+.what-do .txt p {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .what-do .mrg-btm {
