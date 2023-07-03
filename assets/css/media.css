@@ -382,6 +382,7 @@
     .contact_us{
         padding-top: 64px;
         padding-bottom: 64px;
+        z-index: 0;
     }
     /* ---- Footer ----  */
 
