@@ -449,6 +449,7 @@
     }
 }
 
+
 @media(max-width:767px) {
 
     h2,
@@ -715,9 +716,20 @@
     }
 }
 
+@media(max-width:767px) and (min-width:560px) {
+    header .navbar-brand::before {
+        height: 170px;
+    }
+}
+@media(max-width:561px) and (min-width:460px) {
+    header .navbar-brand::before {
+        height: 130px;
+    }
+}
+
 @media(max-width:360px) {
 
     header .navbar-brand::before {
-        height: 110px;
+        height: 100px;
     }
 }
