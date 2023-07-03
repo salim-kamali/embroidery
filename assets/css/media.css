@@ -379,11 +379,10 @@
 
     /* ---- End faqs Page ----  */
 
-
-
-
-
-
+    .contact_us{
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
     /* ---- Footer ----  */
 
     /* footer .row:first-child .col-lg-6 {
@@ -723,6 +722,7 @@
         height: 170px;
     }
 }
+
 @media(max-width:561px) and (min-width:460px) {
     header .navbar-brand::before {
         height: 130px;
