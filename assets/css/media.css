@@ -130,7 +130,6 @@
         z-index: 4;
         background-color: var(--c1);
         margin-bottom: 0 !important;
-        box-shadow: 0px 0px 5px 0px lightblue;
     }
 
     header .nav-tb-collapse .top {
@@ -258,6 +257,9 @@
         margin-bottom: 0;
     }
 
+    .easty-step .wrap.line::before{
+        display: none;
+    }
 
     /* ----------------  */
     .we-offer {
