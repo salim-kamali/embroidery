@@ -718,6 +718,6 @@
 @media(max-width:360px) {
 
     header .navbar-brand::before {
-        height: 80px;
+        height: 110px;
     }
 }
