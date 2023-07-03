@@ -125,7 +125,7 @@
     header .navbar-nav {
         position: relative;
         align-items: start;
-        padding: 20px 32px;
+        padding: 20px 32px 32px;
         /* color: ; */
         z-index: 4;
         background-color: var(--c1);
