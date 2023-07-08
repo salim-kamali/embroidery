@@ -538,7 +538,13 @@
     /* .home_hero .bg-img {
         height: 520px;
     } */
+    
+    /* --------  */
+    .brands::before{
+        width: 310px;
+    }
 
+    /* ----  */
 
     .quality .bg-img {
         height: 1150px;

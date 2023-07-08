@@ -5,27 +5,27 @@
 
 @font-face {
     font-family: "P-Light";
-    src: url("../font/AdventPro-Light.ttf");
+    src: url("../font/Poppins-Light.ttf");
 }
 
 @font-face {
     font-family: "P-Regular";
-    src: url("../font/AdventPro-Regular.ttf");
+    src: url("../font/Poppins-Regular.ttf");
 }
 
 @font-face {
     font-family: "P-Medium";
-    src: url("../font/AdventPro-Medium.ttf");
+    src: url("../font/Poppins-Medium.ttf");
 }
 
 @font-face {
     font-family: "P-SemiBold";
-    src: url("../font/AdventPro-SemiBold.ttf");
+    src: url("../font/Poppins-SemiBold.ttf");
 }
 
 @font-face {
     font-family: "P-Bold";
-    src: url("../font/AdventPro-Bold.ttf");
+    src: url("../font/Poppins-Bold.ttf");
 }
 
 
@@ -118,7 +118,7 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    font-family: "P-Medium";
+    font-family: "P-Regular";
     margin: 0;
 }
 
@@ -159,6 +159,7 @@ a {
     color: var(--cf);
     filter: unset;
     background-color: var(--c2);
+    text-transform: capitalize;
 }
 
 .btn-outline {
@@ -168,6 +169,7 @@ a {
     background-color: unset;
     box-shadow: unset;
     filter: unset;
+    text-transform: capitalize;
 }
 
 .btn-outline:hover {
@@ -354,7 +356,7 @@ header .navbar-nav .nav-link {
     font-family: 'P-Regular';
     font-size: 18px;
     line-height: 150%;
-    margin-right: 29px;
+    margin-right: 24px;
     padding: 0 !important;
     text-transform: capitalize;
 }
@@ -533,6 +535,7 @@ header .bottom .navbar-nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .home_hero::before {
@@ -544,13 +547,26 @@ header .bottom .navbar-nav {
     bottom: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
-    z-index: 0;
+    opacity: 0.7;
+    z-index: 1;
     background-color: #000;
+}
+
+.home_hero .background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .home_hero .txt {
     position: relative;
+    z-index: 1;
 }
 
 .home_hero h5 {
@@ -616,8 +632,8 @@ header .bottom .navbar-nav {
     left: 10%;
     right: 0;
     bottom: 0;
-    z-index: 1;
-    width: 55px;
+    z-index: 2;
+    width: 65px;
     /* margin: auto; */
 }
 
@@ -643,7 +659,7 @@ header .bottom .navbar-nav {
     width: 209px;
     z-index: -1;
     height: 77px;
-    padding: 20px 10px 20px 94px;
+    padding: 20px 10px 20px 88px;
     border-radius: 50px;
     background-color: rgba(217, 217, 217, 0.8);
 }
@@ -679,6 +695,7 @@ header .bottom .navbar-nav {
     width: 104px;
     right: 0;
     left: 0;
+    z-index: 1;
     margin: auto;
 }
 
@@ -715,7 +732,7 @@ header .bottom .navbar-nav {
 }
 
 .we-make p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 38px;
 }
 
@@ -769,7 +786,7 @@ header .bottom .navbar-nav {
 }
 
 .brands p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 38px;
     color: #1D1E27;
 }
@@ -879,7 +896,7 @@ header .bottom .navbar-nav {
 }
 
 .we-offer p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 38px;
 }
 
@@ -909,7 +926,7 @@ header .bottom .navbar-nav {
 .service .title_sec p {
     font-size: 18px;
     line-height: 32px;
-    font-family: "P-Medium";
+    font-family: "P-Regular";
 }
 
 .service .wrap {
@@ -1058,7 +1075,7 @@ header .bottom .navbar-nav {
 .pricing .title_sec p {
     font-size: 18px;
     line-height: 32px;
-    font-family: "P-Medium";
+    font-family: "P-Regular";
 }
 
 .pricing .head {
@@ -1143,7 +1160,7 @@ header .bottom .navbar-nav {
     font-weight: 500;
     font-size: 26px;
     line-height: 33px;
-    padding-bottom: 18px;
+    padding-bottom: 5px;
     margin-bottom: 0;
 }
 
@@ -1191,13 +1208,14 @@ header .bottom .navbar-nav {
     text-align: center;
     margin-bottom: 40px;
 }
-.why-choose .title_sec h2{
+
+.why-choose .title_sec h2 {
     color: #201C1C;
 }
 
 .why-choose .title_sec p {
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 38px;
 }
 
 .why-choose .wrap {
@@ -1266,9 +1284,9 @@ header .bottom .navbar-nav {
     color: var(--c2);
 }
 
-.checkout .title_sec p {
+/* .checkout .title_sec p {
     font-family: "P-Medium";
-}
+} */
 
 /* --- End checkout ---  */
 
@@ -1555,7 +1573,7 @@ header .bottom .navbar-nav {
 }
 
 .blog p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "P-Regular";
 }
 
@@ -1802,14 +1820,30 @@ header .bottom .navbar-nav {
     width: 100%;
 }
 
-.about_us .modal {
+.inset-about-video {
     --bs-modal-width: 65%;
 }
 
-.about_us .modal .modal-content {
-    height: 380px;
+.inset-about-video .modal-content {
+    height: 420px;
     color: var(--cf);
     background-color: var(--c0);
+}
+
+.inset-about-video .inset_video {
+    position: relative;
+}
+
+.inset-about-video .inset_video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 520px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* --- End About_us ---  */
@@ -1991,7 +2025,8 @@ footer {
     padding-top: 49px;
     /* padding-bottom: 80px; */
 }
-footer::before{
+
+footer::before {
     position: absolute;
     content: '';
     top: 0;
@@ -2004,7 +2039,8 @@ footer::before{
     background-repeat: no-repeat;
     background-size: cover;
 }
-footer::after{
+
+footer::after {
     position: absolute;
     content: '';
     top: 0;
@@ -2017,9 +2053,11 @@ footer::after{
     background-repeat: no-repeat;
     background-size: cover;
 }
-footer p{
+
+footer p {
     font-family: "P-Regular";
 }
+
 footer .txt {
     margin-top: 32px;
     max-width: 370px;
@@ -2080,7 +2118,8 @@ footer .footer-bottom {
 footer .footer-bottom p {
     color: var(--cf);
 }
-footer .footer-bottom p img{
+
+footer .footer-bottom p img {
     margin-right: 40px;
 }
 

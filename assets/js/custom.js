@@ -79,7 +79,7 @@ $(document).ready(function () {
         infinite: false,
         swipe: true,
         autoplay: true,
-        speed: 500
+        speed: 1000
     });
 
 
