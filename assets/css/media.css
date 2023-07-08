@@ -222,7 +222,7 @@
     }
 
     .we-make .bg-img {
-        height: 820px;
+        height: 920px;
     }
 
     .we-make .row {
@@ -428,10 +428,11 @@
         padding-bottom: 32px;
     }
 
-    footer .footer-bottom p img{
+    footer .footer-bottom p img {
         margin-right: 0;
     }
-     footer .footer-bottom .row {
+
+    footer .footer-bottom .row {
         flex-direction: column-reverse;
     }
 
@@ -493,6 +494,10 @@
         line-height: 45px;
     }
 
+    .we-make .bg-img {
+        height: 1022px;
+    }
+
     .easty-step h3 {
         font-size: 30px;
         line-height: 45px;
@@ -538,9 +543,9 @@
     /* .home_hero .bg-img {
         height: 520px;
     } */
-    
+
     /* --------  */
-    .brands::before{
+    .brands::before {
         width: 310px;
     }
 
@@ -653,6 +658,9 @@
         top: -120px;
     }
 
+    .brands::before{
+        width: 85%;
+    }
     .who-we {
         overflow-x: clip;
     }
